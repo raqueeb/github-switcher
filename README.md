@@ -267,11 +267,20 @@ Edit `switch.ps1` line ~15, change default detection logic.
 ```
 github-switcher/
 |
-|-- switch.ps1     # Main script (short args: a or r)
-|-- README.md     # This documentation
+|-- switch.ps1          # Main script (short args: a or r)
+|-- README.md           # This documentation
+|-- NEW_PC_SETUP.md     # New Windows PC setup guide
 ```
 
 ---
+
+## New PC Setup
+
+If you're setting up on a new Windows PC, follow the detailed guide in [NEW_PC_SETUP.md](NEW_PC_SETUP.md) which includes:
+- Step-by-step key transfer instructions
+- File permission setup
+- Troubleshooting tips
+- Complete reference commands
 
 ## Security Notes
 
