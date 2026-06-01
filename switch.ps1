@@ -88,22 +88,7 @@ Host aiwithr.github.com
 "@
 }
 
-# Write config and confirm
-$finalConfig = $config + @"
-
-# Host aliases for specific account repos
-Host raqueeb.github.com
-    HostName github.com
-    User git
-    IdentityFile $SSH_DIR\id_ed25519_raqueeb
-
-Host aiwithr.github.com
-    HostName github.com
-    User git
-    IdentityFile $SSH_DIR\id_ed25519_aiwithr
-"@
-
-Set-Content -Path $CONFIG_FILE -Value $finalConfig -Force
+Set-Content -Path $CONFIG_FILE -Value $config -Force
 
 $name = if ($Account -eq 'a') { 'aiwithr' } else { 'raqueeb' }
 Write-Host ""
